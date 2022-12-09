@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Buy breed and sell creatures in our Metaverse"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/TowerDefence/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Cryptocreatures</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/three.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/extendMaterial.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/orbitalControls.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/gltfLoader.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/skeletonUtils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.7.1/umd/index.min.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/FBXLoader.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/CopyShader.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/Pass.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/ShaderPass.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/LuminosityHighPassShader.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/DigitalGlitch.js"></script>
+
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/EffectComposer.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/RenderPass.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/GlitchPass.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/lib/UnrealBloomPass.js"></script>
+
+
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/scenes/scene.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/scenes/mainMenuScene.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/scenes/gameScene.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/mapLoader.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/data/entitiesData.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/data/entityData.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/entity.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/animatedEntity.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/endPointCube.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/enemy/waveManager.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/enemy/infiniteWaveManager.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/enemy/healthbar.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/enemy/enemy.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/turret/displayRadius.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/turret/bullet.js"></script>
+    <script src="%PUBLIC_URL%/TowerDefence/js/src/entities/turret/turret.js"></script>
+  </body>
+</html>

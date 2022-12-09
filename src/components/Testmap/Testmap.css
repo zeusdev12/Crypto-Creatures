@@ -1,0 +1,39 @@
+.mapeditor{
+  height:100vh;
+}
+.layers{
+    position: fixed;
+    z-index: 22;
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+.layers a{
+    color: white;
+}
+.circleimg {
+  border-radius: 50%;
+  box-shadow: inset -8px -8px 8px #883d18,inset 8px 8px 8px #883d18;
+  padding: 4px;
+}
+
+.downsymbol:before{
+	content: "\25bc";
+    float:right;
+    line-height: 4rem;
+}
+.gallery{
+ overflow-x: auto; 
+}
+.gallery a{
+  display: inline;
+  min-width: 150px;
+}
+.lefttop{
+position: absolute;
+top: 0;
+right: 0;
+width: 150px;
+text-align: center;
+  
+}

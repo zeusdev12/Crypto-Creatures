@@ -1,0 +1,63 @@
+creatures0=||=Purple Dragon=||=dragon_purple_256.png=||=dragon_purple.gif=||=dragon_purple.gif
+creatures1=||=Blue Dragon=||=dragon_blue_256.png=||=dragon_blue.gif=||=dragon_blue.gif
+creatures2=||=Green Dragon=||=dragon_green_256.png=||=dragon_green.gif=||=dragon_green.gif
+creatures3=||=Red Dragon=||=dragon_red_256.png=||=dragon_red.gif=||=dragon_red.gif
+creatures4=||=Green Golem=||=golem_green_256.png=||=golem_green.gif=||=golem_green.gif
+creatures5=||=Red Golem=||=golem_red_256.png=||=golem_red.gif=||=golem_red.gif
+creatures6=||=Blue Golem=||=golem_blue_256.png=||=golem_blue.gif=||=golem_blue.gif
+creatures7=||=Green Carnivorous=||=carnivorous_green_256.png=||=carnivorous_green_1024.gif=||=carnivorous_green.gif
+creatures8=||=Red Carnivorous=||=carnivorous_red_256.png=||=carnivorous_red_1024.gif=||=carnivorous_red.gif
+creatures9=||=Yellow Carnivorous=||=carnivorous_yellow_256.png=||=carnivorous_yellow_1024.gif=||=carnivorous_yellow.gif
+creatures10=||=Blue Evil Mushroom=||=evil_mushroom_blue_256.png=||=evil_mushroom_blue_1024.gif=||=evil_mushroom_blue.gif
+creatures11=||=Green Evil Mushroom=||=evil_mushroom_green_256.png=||=evil_mushroom_green_1024.gif=||=evil_mushroom_green.gif
+creatures12=||=Purple Evil Mushroom=||=evil_mushroom_purple_256.png=||=evil_mushroom_purple_1024.gif=||=evil_mushroom_purple.gif
+creatures13=||=Red Evil Mushroom=||=evil_mushroom_red_256.png=||=evil_mushroom_red_1024.gif=||=evil_mushroom_red.gif
+creatures14=||=Blue Forest Bat=||=forest_bat_blue_256.png=||=forest_bat_blue_1024.gif=||=forest_bat_blue.gif
+creatures15=||=Green Forest Bat=||=forest_bat_green_256.png=||=forest_bat_green_1024.gif=||=forest_bat_green.gif
+creatures16=||=Red Forest Bat=||=forest_bat_red_256.png=||=forest_bat_red_1024.gif=||=forest_bat_red.gif
+creatures17=||=Yellow Forest Bat=||=forest_bat_yellow_256.png=||=forest_bat_yellow_1024.gif=||=forest_bat_yellow.gif
+creatures18=||=Black Forest Bunny=||=forest_bunny_black_256.png=||=forest_bunny_black_1024.gif=||=forest_bunny_black.gif
+creatures19=||=Blue Forest Bunny=||=forest_bunny_blue_256.png=||=forest_bunny_blue_1024.gif=||=forest_bunny_blue.gif
+creatures20=||=Gray Forest Bunny=||=forest_bunny_gray_256.png=||=forest_bunny_gray_1024.gif=||=forest_bunny_gray.gif
+creatures21=||=Purple Forest Bunny=||=forest_bunny_purple_256.png=||=forest_bunny_purple_1024.gif=||=forest_bunny_purple.gif
+creatures22=||=Blue Monster Bee=||=monster_bee_blue_256.png=||=monster_bee_blue_1024.gif=||=monster_bee_blue.gif
+creatures23=||=Green Monster Bee=||=monster_bee_green_256.png=||=monster_bee_green_1024.gif=||=monster_bee_green.gif
+creatures24=||=Yellow Monster Bee=||=monster_bee_yellow_256.png=||=monster_bee_yellow_1024.gif=||=monster_bee_yellow.gif
+creatures25=||=Purple Monster Bee=||=monster_bee_purple_256.png=||=monster_bee_purple_1024.gif=||=monster_bee_purple.gif
+creatures26=||=Blue Nymph Fairy=||=nymph_fairy_blue_256.png=||=nymph_fairy_blue_1024.gif=||=nymph_fairy_blue.gif
+creatures27=||=Purple Nymph Fairy=||=nymph_fairy_purple_256.png=||=nymph_fairy_purple_1024.gif=||=nymph_fairy_purple.gif
+creatures28=||=Red Nymph Fairy=||=nymph_fairy_red_256.png=||=nymph_fairy_red_1024.gif=||=nymph_fairy_red.gif
+creatures29=||=Blue Treantguard=||=treantguard_blue_256.gif=||=treantguard_blue_1024.gif=||=treantguard_blue.gif
+creatures30=||=Green Treantguard=||=treantguard_green_256.gif=||=treantguard_green_1024.gif=||=treantguard_green.gif
+creatures31=||=Yellow Treantguard=||=treantguard_green_yellow_256.gif=||=treantguard_green_yellow_1024.gif=||=treantguard_green_yellow.gif
+creatures32=||=Blue Treasure Goblin=||=treasure_goblin_blue_256.gif=||=treasure_goblin_blue_1024.gif=||=treasure_goblin_blue.gif
+creatures33=||=Green Treasure Goblin=||=treasure_goblin_green_256.gif=||=treasure_goblin_green_1024.gif=||=treasure_goblin_green.gif
+creatures34=||=Red Treasure Goblin=||=treasure_goblin_red_256.gif=||=treasure_goblin_red_1024.gif=||=treasure_goblin_red.gif
+creatures35=||=Blue Wolf=||=wolf_blue_256.gif=||=wolf_blue_1024.gif=||=wolf_blue.gif
+creatures36=||=Gray Wolf=||=wolf_gray_256.gif=||=wolf_gray_1024.gif=||=wolf_gray.gif
+creatures37=||=Purple Wolf=||=wolf_purple_256.gif=||=wolf_purple_1024.gif=||=wolf_purple.gif
+creatures38=||=White Wolf=||=wolf_white_256.gif=||=wolf_white_1024.gif=||=wolf_white.gif
+towers0=||=Acid Tower 1=||=tower_acid_1_256.gif=||=tower_acid_1.gif=||=tower_acid_1.gif
+towers1=||=Acid Tower 1=||=tower_acid_1_256.gif=||=tower_acid_1.gif=||=tower_acid_1.gif
+towers2=||=Acid Tower 2=||=tower_acid_2_256.gif=||=tower_acid_2.gif=||=tower_acid_2.gif
+towers3=||=Acid Tower 3=||=tower_acid_3_256.gif=||=tower_acid_3.gif=||=tower_acid_3.gif
+towers4=||=Cannon Tower 1=||=tower_cannon1_256.gif=||=tower_cannon1.gif=||=tower_cannon1.gif
+towers5=||=Cannon Tower 2=||=tower_cannon2_256.gif=||=tower_cannon2.gif=||=tower_cannon2.gif
+towers6=||=Crossbow Tower 1=||=tower_crossbow1_256.gif=||=tower_crossbow1.gif=||=tower_crossbow1.gif
+towers7=||=Crossbow Tower 2=||=tower_crossbow2_256.gif=||=tower_crossbow2.gif=||=tower_crossbow2.gif
+towers8=||=Crossbow Tower 3=||=tower_crossbow3_256.gif=||=tower_crossbow3.gif=||=tower_crossbow3.gif
+towers9=||=Crystal Tower 1=||=tower_crystal1_256.gif=||=tower_crystal1.gif=||=tower_crystal1.gif
+towers10=||=Crystal Tower 2=||=tower_crystal2_256.gif=||=tower_crystal2.gif=||=tower_crystal2.gif
+towers11=||=Crystal Tower 3=||=tower_crystal3_256.gif=||=tower_crystal3.gif=||=tower_crystal3.gif
+towers12=||=Gatling Tower 1=||=tower_gatling1_256.gif=||=tower_gatling1.gif=||=tower_gatling1.gif
+towers13=||=Gauss Tower 1=||=tower_gauss1_256.gif=||=tower_gauss1.gif=||=tower_gauss1.gif
+towers14=||=Plasma Tower 1=||=tower_plasma1_256.gif=||=tower_plasma1.gif=||=tower_plasma1.gif
+towers15=||=Plasma Tower 2=||=tower_plasma2_256.gif=||=tower_plasma2.gif=||=tower_plasma2.gif
+towers16=||=Plasma Tower 3=||=tower_plasma3_256.gif=||=tower_plasma3.gif=||=tower_plasma3.gif
+towers17=||=Radar Tower 1=||=tower_radar1_256.gif=||=tower_radar1.gif=||=tower_radar1.gif
+towers18=||=Radar Tower 2=||=tower_radar2_256.gif=||=tower_radar2.gif=||=tower_radar2.gif
+towers19=||=Radar Tower 3=||=tower_radar3_256.gif=||=tower_radar3.gif=||=tower_radar3.gif
+towers20=||=Tesla Tower 1=||=tower_tesla1_256.gif=||=tower_tesla1.gif=||=tower_tesla1.gif
+towers21=||=Tesla Tower 2=||=tower_tesla2_256.gif=||=tower_tesla2.gif=||=tower_tesla2.gif
+towers22=||=Tesla Tower 3=||=tower_tesla3_256.gif=||=tower_tesla3.gif=||=tower_tesla3.gif
+maps0=||=Map 1=||=m1.png=||=m1.png=||=m1.png

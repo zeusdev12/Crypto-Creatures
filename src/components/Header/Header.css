@@ -1,0 +1,458 @@
+:root {
+    /** sunny side **/
+    --blue-background: #C2E9F6;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --indigo-background: #808fc7;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+  } 
+header{
+    height: 80px;
+    background-color: #1B1523;
+    transition: 0.5s;
+    position: relative;
+    z-index: 7;
+}
+.header_main_state{
+  position: absolute;
+  color: white;
+  bottom: 0;
+  right: 0;
+  font-size: 0.6rem;
+  transition: 0.5s;
+}
+.header_main_state span {
+  margin: 0 4px;
+}
+header.lightTheme{
+  background: rgba(7, 62, 48, 1);
+  transition: 0.5s;
+}
+
+header.lightTheme .bm-menu{
+  background: rgba(7, 62, 48, 1);
+  transition: 0.5s;
+}
+
+.header_main{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    position: relative;
+}
+.header_main_left{
+  display: flex;
+  align-items: center;
+}
+
+.header_main .header_logo img{
+    max-height: 80px;
+}
+
+.header_menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 20px;
+    align-items: center;
+}
+
+.header_menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+
+.header_menu ul li a{
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #9F9F9F;
+    transition: 0.5s;
+}
+
+.header_menu ul li a.active {
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31.25px;
+    color: #ABDC2F;
+    text-decoration: underline;
+}
+
+.header_menu ul li a:hover{
+    transition: 0.5s;
+    color: #ABDC2F;
+    text-decoration: underline;
+    /* text-shadow: 0px 0px 19px #00FFC2; */
+}
+
+  
+.toggle--checkbox {
+    display: none;
+  }
+  .toggle--checkbox:checked {
+    /** This will all flip from sun to moon **/
+    /** Change the label color **/
+  }
+  .toggle--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+  }
+  .toggle--checkbox:checked + .toggle--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+    cursor: pointer;
+    /** Change the cloud to stars **/
+    /** Change the sun into the moon **/
+    /** Show the dimples on the moon **/
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    left: 8px;
+    width: 1px;
+    height: 1px;
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+    width: 1px;
+    height: 1px;
+    top: 2px;
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
+    width: 2px;
+    height: 2px;
+    left: 4px;
+    top: -5px;
+  }
+  .toggle--checkbox:checked + .toggle--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+  }
+  .toggle--checkbox:checked + .toggle--label:after {
+    transition-delay: 350ms;
+    opacity: 1;
+  }
+  .toggle--label {
+    /** Placeholder element, starting at blue **/
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background: var(--blue-color);
+    border-radius: 100px;
+    border: 3px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+    /** The sun cloud and moon stars **/
+    /** Sun/Moon element **/
+    /** Gray dots on the moon **/
+  }
+  .toggle--label-background {
+    width: 8px;
+    height: 11px;
+    border-radius: 36px;
+    position: relative;
+    background: var(--white);
+    left: 30px;
+    top: 9px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label-background:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 8px;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--white);
+    left: 5px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label-background:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -5px;
+    transition: all 150ms ease-in; 
+  }
+  .toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 20.5px;
+    height: 20.5px;
+    border: 2px solid var(--yellow-border);
+    top: -1px;
+    left: 4px;
+    position: absolute;
+    border-radius: 82px;
+    background: var(--yellow-background);
+  }
+  .toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    box-shadow: var(--gray-dots) -19px 0 0 0px, var(--gray-dots) -13px 7px 0 1px;
+    left: 46px;
+    top: 3px;
+    width: 6px;
+    height: 6px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  .bm-cross{
+    height: 20px !important;
+  }
+  
+  @keyframes switch {
+    0% {
+      left: 0px;
+    }
+    60% {
+      left: 0px;
+      width: 20.5px;
+    }
+    100% {
+      left: 24px;
+      width: 20.5px;
+    }
+  }
+  @keyframes reverse {
+    0% {
+      left: 24px;
+      width: 20.5px;
+    }
+    60% {
+      left: 12px;
+      width: 30px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+
+  .header_soc{
+    display: flex;
+    align-items: center;
+  }
+
+  
+
+  .header_soc_menu ul{
+    display: flex;
+    margin: 15px 0 0 20px;
+    padding: 0;
+}
+
+.header_soc_menu ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+.header_soc_menu ul li svg path{
+    transition: 0.5s;
+}
+
+
+.header_soc_menu ul li svg:hover path{
+    transition: 0.5s;
+    fill: #FFFFFF;
+    box-shadow: 0px 0px 19px #00FFC2;
+}
+
+.bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 26px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #C4DBEA;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #C4DBEA;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right: 30px !important;
+    top: 30px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  transition: 0.5s;
+  background: rgba(6, 0, 22, 1);
+  /* padding: 2.5em 1.5em 0; */
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  font-family: Besley;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 52px;
+  color: rgba(255,255,255,0.5);
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  text-align: right;
+}
+.bm-item:hover{
+  color: #ABDC2F;
+  text-decoration: underline;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.mobile_menu_header{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.mobile_menu_header .mobile-logo{
+  max-width: 150px;
+}
+
+.mobile_menu_header div{
+  width: 100px;
+}
+
+.mobile_soc{
+  display: flex !important;
+  margin-top: 20px!important;
+  justify-content: flex-end;
+  column-gap: 30px;
+}
+
+.mobile_soc .theme_toggle {
+  margin-top: 12px;
+}
+
+.main_mobile_links svg {
+  width: 100px;
+} 
+
+.main_mobile_links a{
+  margin: 0 20px;
+}
+.connect_wallet{
+    color: #9f9f9f;
+    border: 1px solid #9f9f9f;
+    /* border-radius: 8px; */
+    padding: 0.5rem 12px;
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    width: fit-content;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+.connect_wallet:hover{
+    border: 1px solid #fff;
+    transition: .5s;
+    color: #fff;
+    text-shadow: 0 0 19px #00ffc2;
+}
+
+@media (max-width: 767.98px) {
+  .bm-burger-button{
+    display: block;
+  }
+  /* header{
+      height: 0;
+  } */
+  .header_main{
+      /* display: none; */
+    height: initial;
+  }
+  .header_menu {
+    display: none;
+  }
+  .header_soc {
+    display: none;
+  }
+  .main_links{
+      display: none;
+  }
+  .connect_wallet {
+      margin-top: 20px;
+      margin-left: auto;
+  }
+
+}
+
+@media (max-width: 399.98px) {
+  .mobile_menu_header .mobile-logo{
+    max-width: 100px;
+  }
+  .bm-cross-button {
+    top: 55px !important;
+  }
+}

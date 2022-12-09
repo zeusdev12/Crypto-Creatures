@@ -1,0 +1,113 @@
+.about{
+    background-color: #2C0B45;
+    padding: 10px 0 50px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.about.lightTheme{
+    background-color: rgba(7, 62, 48, 1);
+    transition: 0.5s;
+}
+.about_wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.about_background{
+    background: url('../../img/about-bg.png') no-repeat left;
+    background-size: contain;
+    width: 50%;
+    height: 1000px;
+}
+
+.about_main{
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+}
+
+.about_main p {
+    color: #ABDC2F;
+    font-size: 100px;
+    line-height: 125px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about_links{
+    display: flex;
+}
+
+.about_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25.6px;
+    color: #FFFFFF;
+    margin: 35px 0;
+}
+
+.about_links a svg{
+    max-width: 120px;
+    
+}
+
+.about_links a {
+    margin-right: 20px;
+    transition:0.5s;
+}
+
+.about_links a:hover {
+    transform: scale(1.1);
+    transition:0.5s;
+}
+
+.video {
+    width: fit-content;
+    height: calc(38vw * 0.56 + 18px);
+    position: relative;
+    background-size: contain;
+    margin: 45px 0px;
+    border: 9px solid #ABDC2F;
+    border-radius: 15px;
+}
+
+@media (max-width: 767.98px) {
+    .about_main{
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .about_main p {
+        font-size: 60px;
+    }
+    .about_wrapper{
+        height: initial;
+        flex-direction: column-reverse
+    }
+    .about_background{
+        background: url('../../img/about-bg.png') no-repeat top;
+        background-size: contain;
+        width: 100%;
+        height: 500px;
+        margin-top: -200px;
+    }
+    .video {
+        height: 243px;
+    }
+  }
+
+  @media (max-width: 399.98px) {
+    .about_main{
+        margin-top: 0;
+    }
+    .video{
+        margin: 20px 8px;
+    }
+}

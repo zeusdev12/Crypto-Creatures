@@ -1,0 +1,117 @@
+{
+    "name": "Level 1",
+    "type": "level1_FBX",
+    "money": 100,
+    "waveData": [
+        {
+            "enemyCount": 2,
+            "enemyTypes": [
+                "basic"
+            ],
+            "spawnTime": 2.5,
+            "money": 60
+        },
+        {
+            "enemyCount": 5,
+            "enemyTypes": [
+                "basic"
+            ],
+            "spawnTime": 4,
+            "money": 20
+        },
+        {
+            "enemyCount": 6,
+            "enemyTypes": [
+                "basic",
+                "basic",
+                "medium",
+                "basic"
+            ],
+            "spawnTime": 3,
+            "money": 30
+        }
+    ],
+    "mapsize": 8,
+    "map": [
+        [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            0
+        ],
+        [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1
+        ],
+        [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+        ],
+        [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+        ],
+        [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+        ],
+        [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3
+        ]
+    ]
+}

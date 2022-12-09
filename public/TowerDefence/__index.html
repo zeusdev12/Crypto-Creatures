@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wave-starting-text"></div>
+    <div id="toMainMenuButtonGameFinishedContainer">
+        <div class="gamebutton red-button noselect" id="toMainMenuButtonGameFinished">
+            MAIN MENU
+        </div>
+    </div>
+    <div id="main-menu-container" class="game-menu">
+        <div class="gametitle">CryptoCreatures Tower Defense</div>
+        <div class="blurred-bg"></div>
+        <div class="main-menu-panel">
+            <div id="levels-panel">
+            </div>
+            <div class="gamebutton yellow-button noselect" id="tutorialButton">
+                GAME INSTRUCTIONS
+            </div>
+        </div>
+    </div>
+
+    <div id="game-buttons-container" class="game-menu">
+        <div class="gamebutton yellow-button noselect margin-left-16px" id="goToShopButton">
+            SHOP
+        </div>
+        <div></div>
+
+        <div class="gamebutton blue-button noselect margin-right-16px" id="nextWaveButton">
+            START WAVE
+        </div>
+    </div>
+
+    <div id="in-game-container" class="game-menu noselect">
+        <div class="margin-left">
+            <span>Lives: </span>
+            <span class="game-value" id="lives-value">3</span>
+            <div id="remove-lives-value"></div>
+        </div>
+
+        <div>
+            <span>Money: </span>
+            <span class="game-value" id="money-value">100</span>
+            <div id="add-money-value"></div>
+        </div>
+
+        <div>
+            <span>Wave: </span>
+            <span class="game-value" id="wave-value"></span>
+        </div>
+
+        <div class="margin-right">
+            <span>Enemies Left: </span>
+            <span class="game-value" id="ememies-left-value"></span>
+        </div>
+    </div>
+
+
+    <div id="game-main-container" class="game-menu noselect">
+        <div class="gametitle noselect ">Game Paused</div>
+
+        <div class="gamebutton green-button noselect" id="resumeButton">
+            RESUME
+        </div>
+        <div class="game-menu-volume-panel">
+            <div class="volume-div">
+                <div>Game Effects Volume</div>
+                <img class="volume-img" src="assets/images/volume_up.png" id="effectsVolume">
+            </div>
+            <div class="volume-div">
+                <div>Game Music Volume</div>
+                <img class="volume-img" src="assets/images/volume_up.png" id="musicVolume">
+            </div>
+        </div>
+        <div class="gamebutton red-button noselect" id="toMainMenuButton">
+            MAIN MENU
+        </div>
+    </div>
+
+    <div id="control-freezed-text">Controls Freezed</div>
+
+    <div class="tutorial-div" id="tutorial-panel">
+        <div class="tutorial-title">INSTRUCTIONS</div>
+
+        <div>
+            <span>Rotate Around</span>
+            <br>
+            <span class="game-value">Right Mouse Button</span>
+        </div>
+
+        <div>
+            <span>Move Around</span>
+            <br>
+            <span class="game-value">Left Mouse Button</span>
+        </div>
+
+        <div>
+            <span>Zoom</span>
+            <br>
+            <span class="game-value">Middle Mouse Button</span>
+        </div>
+
+        <div>
+            <span>Open Shop</span>
+            <br>
+            <span class="game-value">Key: S</span>
+        </div>
+
+        <div>
+            <span>Place turret</span>
+            <br>
+            <span class="game-value">Left Mouse Button</span>
+        </div>
+
+        <div>
+            <span>Cancel Turret placing</span>
+            <br>
+            <span class="game-value">Right Mouse Button</span>
+        </div>
+
+
+        <div>
+            <span>Lock Controls</span>
+            <br>
+            <span class="game-value">Key: F</span>
+        </div>
+
+        <div>
+            <span>Toggle Game Menu</span>
+            <br>
+            <span class="game-value">Key: Escape</span>
+        </div>
+        <div>
+            <span>After placing a turret</span>
+            <br>
+            <span class="game-value">Click on it for more info</span>
+        </div>
+
+        <div>
+            <span>Money can be obtained</span>
+            <br>
+            <span class="game-value">by killing the enemies</span>
+        </div>
+    </div>
+
+
+    <div id="turret-details-container" class="game-menu">
+        <div>
+            <span>Name: </span>
+            <span class="game-value" id="turret-name-value"></span>
+        </div>
+
+        <div>
+            <span>Reach Distance: </span>
+            <span class="game-value" id="turret-reach-distance-value"></span>
+        </div>
+
+        <div>
+            <span>Firing Speed: </span>
+            <span class="game-value" id="turret-firing-speed-value"></span>
+        </div>
+
+        <div>
+            <span>Damage: </span>
+            <span class="game-value" id="turret-damage-value"></span>
+        </div>
+    </div>
+
+    <div id="shop-container" class="game-menu">
+        <div id="shop-content-container">
+        </div>
+    </div>
+
+    <div id="app"></div>
+
+    <script src="js/lib/three.js"></script>
+    <script src="js/lib/extendMaterial.js"></script>
+    <script src="js/lib/orbitalControls.js"></script>
+    <script src="js/lib/gltfLoader.js"></script>
+    <script src="js/lib/skeletonUtils.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/fflate@0.7.1/umd/index.min.js"></script>
+    
+    <script src="js/lib/FBXLoader.js"></script>
+    
+    
+    <script src="js/src/scenes/scene.js"></script>
+    <script src="js/src/scenes/mainMenuScene.js"></script>
+    <script src="js/src/scenes/gameScene.js"></script>
+
+    <script src="js/src/mapLoader.js"></script>
+    <script src="js/src/entities/data/entitiesData.js"></script>
+    <script src="js/src/entities/data/entityData.js"></script>
+
+    <script src="js/src/entities/entity.js"></script>
+    <script src="js/src/entities/animatedEntity.js"></script>
+    <script src="js/src/entities/endPointCube.js"></script>
+
+    <script src="js/src/entities/enemy/waveManager.js"></script>
+    <script src="js/src/entities/enemy/infiniteWaveManager.js"></script>
+    <script src="js/src/entities/enemy/healthbar.js"></script>
+    <script src="js/src/entities/enemy/enemy.js"></script>
+
+    <script src="js/src/entities/turret/displayRadius.js"></script>
+    <script src="js/src/entities/turret/bullet.js"></script>
+    <script src="js/src/entities/turret/turret.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

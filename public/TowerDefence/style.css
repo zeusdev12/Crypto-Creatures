@@ -1,0 +1,441 @@
+@font-face {
+    font-family: kennyFont;
+    src: url("kenvector_future_thin.ttf");
+}
+
+body {
+    font-family: kennyFont;
+}
+
+.game-menu {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+}
+
+#control-freezed-text {
+    display: none;
+    /* flex */
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #59a5b1;
+    right: 4px;
+    top: 10%;
+    padding: 8px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+
+#turret-details-container {
+    display: none;
+    /* flex */
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.2em;
+    background: #59a5b1;
+    width: auto;
+    padding: 16px;
+    right: 4px;
+    top: 14%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+
+#turret-name-value, #turret-reach-distance-value, #turret-firing-speed-value, #turret-damage-value {
+    font-weight: normal;
+}
+
+#shop-container {
+    display: none;
+    justify-content: start;
+    overflow-y: auto;
+    height: 80%;
+    width: auto;
+    left: 4px;
+    top: 14%;
+    flex-direction: column;
+    background: #010101aa;
+    color: #bbb;
+   
+}
+
+.shop-content-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    padding: 24px;
+    background: url("/TowerDefence/assets/images/bkgblock.png") no-repeat 100%;
+
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-content-item>* {
+    margin-top: 8px;
+}
+
+.shop-content-item-not-enough-money {
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+.shop-content-item-title {
+    font-weight: bold;
+}
+
+.shop-content-item-img {
+    max-width: 180px;
+    max-height: 180px;
+    background: #ffffff52;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 120px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#game-main-container {
+    height: 100%;
+    display: none;
+    /* flex */
+    flex-direction: column;
+    background: #a7a7a7d1;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+#game-main-container>* {
+    margin: 16px;
+}
+
+.main-menu-panel {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 25px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #060016;
+    z-index: 1;
+    border: 2px solid #1d607e;
+}
+
+.main-menu-panel>* {
+    margin: 16px;
+}
+
+.gamebutton {
+    background-repeat: no-repeat;
+    z-index: 5;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 50px;
+    width: 190px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.volume-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.game-menu-volume-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 25px;
+    background: #dadada;
+    padding: 16px;
+}
+
+.volume-img {
+    margin-left: 16px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 25px;
+    background: #f7dbb7;
+    cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.gametitle {
+    font-size: 3em;
+    z-index: 1;
+    margin-bottom: 10%;
+    color: white;
+}
+
+#main-menu-container {
+    height: 100%;
+    display: none;
+    /* flex */
+    align-items: center;
+    flex-direction: column;
+}
+
+.green-button {
+    background-image: url("/TowerDefence/assets/images/ui/green_button04.png");
+}
+
+.green-button:active {
+    background-image: url("/TowerDefence/assets/images/ui/green_button05.png");
+}
+
+.yellow-button {
+    background: url("/TowerDefence/assets/images/ui/yellow_button04.png") no-repeat 50%;
+    background-size: contain;
+}
+
+.yellow-button:active {
+    background-image: url("/TowerDefence/assets/images/ui/yellow_button05.png");
+}
+
+.blue-button {
+
+    background: url("/TowerDefence/assets/images/ui/blue_button04.png") no-repeat 50%;
+    background-size: contain;
+}
+
+.blue-button:active {
+    background-image: url("/TowerDefence/assets/images/ui/blue_button05.png");
+}
+
+.red-button {
+    background-image: url("/TowerDefence/assets/images/ui/red_button01.png");
+}
+
+.red-button:active {
+    background-image: url("/TowerDefence/assets/images/ui/red_button02.png");
+}
+
+.blurred-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(118 135 150 / 65%);
+}
+
+#wave-starting-text {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+#toMainMenuButtonGameFinishedContainer {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+}
+
+#game-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+#in-game-container {
+    display: flex;
+    font-size: 2em;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.add-money-value-positive {
+    color: #03ff03;
+}
+
+.add-money-value-negative {
+    color: #ff0303;
+}
+
+#add-money-value {
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+#remove-lives-value {
+    color: #ff0303;
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+.margin-left {
+    margin-left: 240px;
+}
+
+.margin-right {
+    margin-right: 240px;
+}
+
+.margin-right-16px {
+    margin-right: 16px;
+}
+
+.margin-left-16px {
+    margin-left: 16px;
+}
+
+.game-value {
+    color: #cb7bd7;
+}
+
+.add-value {
+    animation-name: addScoreAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes addScoreAnimation {
+    0% {
+        opacity: 1;
+        transform: translate(110%, -5vh);
+    }
+    100% {
+        transform: translate(110%, -20vh);
+        opacity: 0;
+    }
+}
+
+.hide-shop-panel {
+    display: flex !important;
+    animation-name: hideShopPanelAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.show-shop-panel {
+    display: flex !important;
+    animation-name: showShopPanelAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.turret-properties-panel {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+@keyframes hideShopPanelAnimation {
+    0% {
+        transform: translateX(-105%);
+    }
+    100% {
+        transform: translateX(2%);
+    }
+}
+
+@keyframes showShopPanelAnimation {
+    0% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(-105%);
+    }
+}
+
+.tutorial-div {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 25px;
+    padding: 16px;
+    top: 16px;
+    left: 16px;
+    background: #8d92b3;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+
+.tutorial-div>* {
+    padding: 12px;
+}
+
+.tutorial-title {
+    font-size: 1.4em;
+    color: white;
+}
+
+#tutorialButton {
+    width: 310px !important;
+    background-size: 100% 100%;
+    color: green;
+}
+
+#levels-panel {
+    display: flex;
+}
+
+.level-panel-item {
+    padding: 24px;
+
+    background-size: 100% 100%;
+    color: #cb7bd7;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+
+.card_1{
+  background: url("/TowerDefence/assets/images/ui/card_1.png") no-repeat 50%;
+  background-size: 100% 100%;
+}
+.card_2{
+  background: url("/TowerDefence/assets/images/ui/card_2.png") no-repeat 50%;
+  background-size: 100% 100%;
+}
+.card_3{
+  background: url("/TowerDefence/assets/images/ui/card_3.png") no-repeat 50%;
+  background-size: 100% 100%;
+}
+.card_4{
+  background: url("/TowerDefence/assets/images/ui/card_4.png") no-repeat 50%;
+  background-size: 100% 100%;
+}
+

@@ -1,0 +1,56 @@
+{
+  "name": "crypto-creatures",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@react-three/drei": "^7.7.0",
+    "@react-three/fiber": "^7.0.6",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "html-react-parser": "^1.2.8",
+    "loadash": "^1.0.0",
+    "react": "^17.0.2",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "^17.0.2",
+    "react-double-marquee": "^1.1.0",
+    "react-image-picker": "^1.1.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "react-unity-webgl": "^8.4.10",
+    "slick-carousel": "^1.8.1",
+    "three": "^0.131.3",
+    "use-state-if-mounted": "^1.0.4",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

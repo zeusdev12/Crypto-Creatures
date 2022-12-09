@@ -1,0 +1,326 @@
+
+
+@font-face {
+	font-family: 'Besley';
+	font-display:auto;
+	src: local('Besley'), local('Besley'), url('fonts/besley/Besley-Bold.otf');
+	font-weight: 900;
+	font-style: normal;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #060016;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.play.container {
+  margin: 0;
+  max-width: 100%;
+}
+
+.about .container {
+  padding: 0 16vw 0 8vw;
+}
+
+.mtabs.container {
+  margin: auto;
+}
+
+.play_now {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    background: url(img/play_now.png) no-repeat 50%;
+    background-size: contain;
+    text-shadow: 0px 4px 0px #4C1881;
+    -webkit-text-stroke: 5px #5F1BA4;
+    outline: none;
+    padding: 40px;
+    transition: .5s;
+    display: block;
+}
+
+.lightTheme {
+  background: #073e30;
+  transition: .5s;
+}
+.relative {
+  position: relative;
+}
+.troverlay {
+  position: absolute;
+  transition: .5s;
+  width:100%;
+  height:100vh;
+}
+.messages{
+  display: flex;
+  justify-content: center;
+  padding: 120px 0;
+}
+.hidden{
+  display:none;
+  transition: .5s;
+}
+.dialog{
+  text-align: center;
+  color: white;
+}
+.centerflex{
+  display: flex;
+  justify-content: center;
+}
+
+.tabimg{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+.tabs{
+  display: flex;
+justify-content: space-around;
+color: #9f9f9f;
+}
+.tabs .active{
+  color: #fff;
+}
+.mtabs{
+  display: flex;
+  color: #9f9f9f;
+  padding-top: 22px;
+  height: 90px;
+  align-items: center;
+}
+.mtabs a {
+  width: 150px;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+.mtabs .active{
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #ABDC2F;
+  text-decoration: underline;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 31.25px;
+}
+
+.markets.container {
+  background-color: #2C0B45;
+  padding: 0 150px;
+  min-height: 100vh;
+}
+
+@media (max-width: 499.98px) {
+  .mtabs a {
+    width: 90px;
+  }
+  .about .container {
+    padding: 0;
+  }
+  .container {
+    padding: 10px;
+  }
+
+  .markets.container {
+    padding: 0 10px;
+  }
+  .mtabs .active{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .mtabs a {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .tabimg{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.nfblock{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 18px;
+    border: 3px solid #883d18;
+    border-radius: 25px;
+    margin: 18px 4px;
+    background-color: #f1dece;
+}
+.nfblock img{
+  margin: auto;
+  padding: 20px;
+  box-shadow: inset -12.446px -12.446px 31.1151px #883d18, inset 12.446px 12.446px 31.1151px #883d18;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+}
+
+.nfblock button{
+    font-family: Audiowide;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #883d18;
+    text-shadow: 0 0 9px #b0ffff;
+    width: 100%;
+    text-align: center;
+    transition: .5s;
+    padding: 14px;
+    background: none;
+    border: none;
+}
+.nfblock p{
+  text-align: center;
+  color: #883d18;
+  padding: 8px;
+}
+
+.nfblock  button:hover {
+    transition: .5s;
+    text-shadow: 0 0 13px #b0ffff;
+    transform: scale(1.1);
+}
+
+.nfblockPower{
+  display: flex;
+  font-size: 0.6rem;
+  color: #cb7bd7;
+justify-content: space-between;
+  
+}
+.nfblockMine{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  font-size: 0.8rem;
+  flex-direction: column;
+  color: #ffd750;
+}
+  
+.markets h2{
+    font-family: Besley;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #CB7BD7;
+    text-align: center;
+    padding: 50px 0;
+}
+.app{
+  padding: 2px;
+}
+
+.image_picker {
+  width: 338px!important;
+  height: 300px;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.image_picker::-webkit-scrollbar {
+  display: none;
+}

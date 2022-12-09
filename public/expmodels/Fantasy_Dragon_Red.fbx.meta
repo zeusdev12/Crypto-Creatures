@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: dd2b69019d5facfea974b43d306d9d27
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -3100369314251171874
+    second: Idle
+  - first:
+      74: -6731521657354966314
+    second: BiteAttack
+  - first:
+      74: -7197351243780766232
+    second: FireBreathOnce
+  - first:
+      74: 200609238910638363
+    second: FireBreathLeftRight
+  - first:
+      74: -1068325664247336573
+    second: TakeDamage
+  - first:
+      74: -4630339522487117836
+    second: Die
+  - first:
+      74: -5006469387719102519
+    second: SpellCast
+  - first:
+      74: -2476634859844193926
+    second: Ground Idle
+  - first:
+      74: -4987800259860428917
+    second: Ground Bite Attack
+  - first:
+      74: 8967568282885390341
+    second: Ground Projectile Attack
+  - first:
+      74: -4082826154156438949
+    second: Ground Die
+  - first:
+      74: -5991524835518774279
+    second: Ground Take Damage
+  - first:
+      74: 5769597441812321821
+    second: Ground Spell Cast
+  - first:
+      74: 5406480169558207182
+    second: Fly Down Fast In Place
+  - first:
+      74: 7687606167751101334
+    second: Fly Down In Place
+  - first:
+      74: 5485562197625647108
+    second: Fly Forward Fast In Place
+  - first:
+      74: -3911018824948146124
+    second: Fly Left Fast In Place
+  - first:
+      74: -5393049448798084612
+    second: Fly Left In Place
+  - first:
+      74: -1963852346166381601
+    second: Fly Right Fast In Place
+  - first:
+      74: -1107137710568615041
+    second: Fly Right In Place
+  - first:
+      74: 8164271315489746350
+    second: Fly Up Fast In Place
+  - first:
+      74: -8249679524002549773
+    second: Fly Up In Place
+  - first:
+      74: -8074285274186486471
+    second: Strafe Left In Place
+  - first:
+      74: 8656561097119236144
+    second: Strafe Left W Root
+  - first:
+      74: 2166417687118989629
+    second: Strafe Right In Place
+  - first:
+      74: -8002626895684792149
+    second: Strafe Right W Root
+  - first:
+      74: 9101223070723814752
+    second: Walk Backward In Place
+  - first:
+      74: -361731319493712924
+    second: Walk Backward W Root
+  - first:
+      74: -1699631405067790213
+    second: Walk Forward In Place
+  - first:
+      74: -4787209076947060824
+    second: Walk Forward W Root
+  - first:
+      74: 6473535351358845751
+    second: Fly Forward In Place
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

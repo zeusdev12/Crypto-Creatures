@@ -1,0 +1,583 @@
+.wrapper_main{
+    overflow: hidden;
+    background: #060016;
+    position: relative;
+}
+
+.main{
+     /* background: linear-gradient(0deg, #00AFB0 0%, #00A3A9 9.97%, #008497 27.81%, #006887 41.47%, #114680 57.49%, #271A76 75.99%, #060039 100%); */
+    position: relative;
+    transition: 0.5s;
+}
+.main.lightTheme{
+    transition: 0.5s;
+    /* background: linear-gradient(0deg, #73C1F7 0%, #5DB5FF 9.97%, #5CCDFF 27.81%, #5CD2FF 41.47%, #5CE3FF 57.49%, #6FECFF 75.99%, #5CE1FF 100%); */
+}
+
+.sky img{
+    
+    display: inline-block;
+}
+
+.fullscreen {
+    width:100%;
+    /* height:100vh; */
+    margin-top: -80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.big-fullscreen {
+    width:100%;
+    height:100vh;
+    margin-top: -80px;
+    overflow: hidden;
+    position: relative;
+    background: url('../../img/main.png') no-repeat center;
+    background-size: cover;
+}
+
+
+#videofullscreen {
+    width:100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.dark_sky.active, .light_sky.active{
+    transition: 0.5s;
+    opacity: 1;
+    display: block !important;
+}
+
+.sky_block{
+    min-height: 300px;
+    overflow:hidden;
+    position: relative;
+}
+.dark_sky_1, .dark_sky_2, .dark_sky_3, .dark_sky_4, .dark_sky_5, .dark_sky_6 {
+    max-width: 65%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.dark_sky_1{
+    top: -20px;
+    left: 2%;
+    animation: animCloud-1 95s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+.dark_sky_2{
+    top: -30px;
+    left: 40%;
+    animation: animCloud-2 120s  linear;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+.dark_sky_3{
+    animation: animCloud-3 145s  linear;
+    animation-iteration-count: 1;
+    left: 68%;
+    animation-fill-mode:forwards;
+    top: -20px;
+}
+
+.dark_sky_4{
+    animation: animCloud-main 135s infinite linear;
+    left: 100%;
+    animation-delay:5s;
+    top: -20px;
+}
+
+.dark_sky_5{
+    animation: animCloud-main 135s infinite linear;
+    top: -30px;
+    left: 100%;
+    animation-delay:52s;
+}
+.dark_sky_6{
+    animation: animCloud-main 135s infinite linear;
+    left: 100%;
+    animation-delay:87s;
+    top: -20px;
+}
+
+.sky{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ground{
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: -230px;
+}
+
+.ground img{
+    min-width: 100%;
+}
+.ground_front{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -15%;
+    pointer-events: none;
+}
+.mobile_ground{
+    display: none;
+}
+.ground_front path:first-child{
+    transition: 0.5s;
+}
+
+.ground_front.lightTheme path:first-child{
+    fill:  rgba(7, 62, 48, 1);
+    transition: 0.5s;
+}
+
+.sky .moon{
+    top: 10%;
+    min-width: auto;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.sky .moon.active{
+    top: 10%;
+    min-width: auto;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.8s;
+    opacity: 1;
+}
+
+.sky .sun{
+    top: 10%;
+    min-width: auto;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.sky .sun.active{
+    top: 10%;
+    min-width: auto;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.8s;
+    opacity: 1;
+}
+
+
+.monsters{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-end;
+    bottom: 15%;
+}
+
+.first-monster{
+    margin-bottom: 80px;
+    margin-left: 110px;
+}
+
+.first-monster img{
+    width: 220px;
+    height: auto;
+}
+
+.second-monster{
+    margin-bottom: 50px;
+}
+.second-monster img{
+    width: 160px;
+    height: auto;
+}
+
+.third-monster{
+  
+}
+.third-monster img{
+    width: 220px;
+    height: auto;
+}
+
+.fourth-monster {
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+.fourth-monster img{
+    width: 230px;
+    height: auto;
+}
+.main-logo{
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.main-logo img{
+    min-width: auto;
+    max-width: 31vw;
+    margin: 0 auto;
+    z-index: 3;
+}
+.main-logo .play_now{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    /* text-shadow: 0px 0px 5px rgba(0, 136, 255, 0.74); */
+    text-shadow: 0px 4px 0px #4C1881;
+    -webkit-text-stroke: 5px #5F1BA4;
+    background: url('../../img/play_now.png') no-repeat center;
+    background-size: contain;
+    outline: none;
+    padding: 20px;
+    transition: 0.5s; 
+}
+
+.main-logo .play_now:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.main-logo .main_links a{
+    margin: 0 20px;
+    width: 130px;
+    
+}
+
+.main-logo .main_links svg{
+    width: 140px;
+    transition: 0.5s;
+}
+
+.main-logo .main_links a:hover svg{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.ground .cloud{
+    position: absolute;
+    min-width: auto;
+}
+
+.cloud-1{
+    max-width: 130px;
+    height: auto;
+   animation: animCloud 30s infinite linear; 
+    top: 0;
+    left: 110%;
+}
+.cloud-6{
+    max-width: 70px;
+    height: auto;
+   animation: animCloud 30s infinite linear;
+    top: 20%;
+    animation-delay:5s;
+    left: 110%;
+}
+
+.cloud-2{
+    max-width: 60px;
+    height: auto;
+   animation: animCloud 30s infinite linear; 
+    top: 0;
+    animation-delay:10s;
+    left: 110%;
+}
+
+.cloud-3{
+    max-width: 60px;
+    height: auto;
+   animation: animCloud 30s infinite linear; 
+    top: 17%;
+    animation-delay:15s;
+    left: 110%;
+}
+
+.cloud-4{
+    max-width: 60px;
+    height: auto;
+   animation: animCloud 30s infinite linear;
+    top: 0%;
+    animation-delay:20s;
+    left: 110%;
+}
+
+.cloud-5{
+    max-width: 60px;
+    height: auto;
+   animation: animCloud 30s infinite linear; 
+    top: 20%;
+    animation-delay:25s;
+    left: 110%;
+}
+
+.ground_img{
+    z-index: 1;
+}
+
+img.monster-5{
+    min-width: auto;
+    position: absolute;
+    z-index: 1;
+    width: 130px;
+    height: auto;
+    top: 5%;
+    left: 70%;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: fly;
+    animation-timing-function: ease-out;
+    animation-direction: reverse;
+    z-index: 3;
+}
+
+@keyframes animCloud {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -30%;
+    }
+}
+@keyframes animCloud-main {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -30%;
+    }
+}
+
+
+@keyframes animCloud-1 {
+    from {
+        left: 2%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes animCloud-2 {
+    from {
+        left: 40%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes animCloud-3 {
+    from {
+        left: 68%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+    
+     @media (min-width: 1800px) {
+        .first-monster img{
+            width: 300px;
+        }
+        
+        .second-monster img{
+            width: 220px;
+        }
+    
+        .third-monster img{
+            width: 300px;
+        }
+        .fourth-monster img{
+            width: 320px;
+        }
+        .ground_front {
+
+            margin-bottom: -12%;
+        }
+     }
+
+     @media (min-width: 2499px) {
+        .first-monster img{
+            width: 440px;
+        }
+        
+        .second-monster img{
+            width: 320px;
+        }
+    
+        .third-monster img{
+            width: 440px;
+        }
+        .fourth-monster img{
+            width: 460px;
+        }
+        .ground_front {
+
+            margin-bottom: -12%;
+        }
+     }
+
+  
+
+
+     @media (max-width: 1199.98px) {
+        .main-logo{
+            top: 0;
+        }
+
+        .main-logo .play_now {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+       
+     }
+
+
+     @media (max-width: 991.98px) {
+        .main-logo img{
+            max-width: 230px;
+        }
+        .main-logo .main_links svg{
+            width: 100px;
+        }
+        .main-logo {
+            top: 5%;
+        }
+        img.monster-5{
+            width: 100px;
+           
+        }
+        .ground_front{
+            margin-bottom: -18%;
+        }
+      }
+
+
+      @media (max-width: 767.98px) {
+        .main{
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transform: scale(1) translate(0, 0) !important;
+        }
+        .ground .ground_img{
+            min-width: 150%;
+            margin-left: -50%;
+        }
+        .ground_front{
+            width: 150%;
+            margin-left: -50%;
+            margin-bottom: -18%;
+            pointer-events: none;
+            display: none;
+        }
+        .first-monster{
+            display: none;
+        }
+
+        .sky img{
+            min-width: 150%;
+        }
+        .main-logo {
+            top: 10px;
+        }
+        .main-logo img {
+            min-width: auto;
+            max-width: 350px;
+        }
+        .big-fullscreen {
+            height: 120vh;
+        }
+        .main-logo .play_now{
+            font-size: 25px;
+            -webkit-text-stroke: 2px #5F1BA4;
+        }
+        .fourth-monster {
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+        .fourth-monster img {
+            width: 190px;
+            height: auto;
+        }
+        .third-monster img {
+            width: 200px;
+            height: auto;
+        }
+        img.monster-5{
+            display: none;
+        }
+        .dark_sky_1, .dark_sky_2, .dark_sky_3, .dark_sky_4, .dark_sky_5, .dark_sky_6{
+            min-width: 45% !important;
+        }
+        .mobile_grount{
+            display: block !important;
+
+        }
+      }
+
+      @media (max-width:575.98px) {
+        .dark_sky_1, .dark_sky_2, .dark_sky_3, .dark_sky_4, .dark_sky_5, .dark_sky_6{
+            min-width: 65% !important;
+        }
+      }
+
+      
+      @keyframes fly {
+        0%   { transform: scale(1,1)    translate(0, 0) rotate(0deg); }
+        10%  { transform: scale(1) translate(20%, 5%) rotate(10deg); }
+        30%  { transform: scale(1.1) translate(30%, 0) rotate(-10deg); }
+        50%  { transform: scale(1)    translate(20%, 5%) rotate(5deg); }
+        57%  { transform: scale(1,1)    translate(10%, 0) rotate(-10deg); }
+        64%  { transform: scale(1)    translateY(0, 5%) rotate(5deg); }
+        77%  { transform: scale(1.1)    translateY(10%, 5%) rotate(-5deg); }
+        89%  { transform: scale(1)    translateY(5%, 10%) rotate(5deg); }
+        100% { transform: scale(1,1)    translateY(0, 0) rotate(0); }
+    }
+
+     

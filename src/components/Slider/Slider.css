@@ -1,0 +1,215 @@
+.slider{
+    background: url('../../img/slider-bg.png') no-repeat center;
+    background-size: cover;
+    padding-bottom:80px;
+    background-color: #4B35A1;
+    transition: 0.5s;
+}
+
+.slider.lightTheme{
+    background: url('../../img/slider-bg-light.png') no-repeat center;
+    background-size: contain;
+    padding-bottom:80px;
+    background-color: #073E30;
+    transition: 0.5s;
+}
+.slider h2{
+    font-family: Besley;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #CB7BD7;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.slider span{
+    display: block;
+    max-width: 65%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25.6px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 50px auto 0;
+}
+
+.main_slide img{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main_slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_slider .slick-slider{
+    margin: 50px 0 -20px 0;
+    height: 300px;
+    width: 530px;
+}
+
+.main_slider .slick-slider img {
+    max-width: initial;
+    max-height: 300px;
+}
+
+.main_slider .slick-active.slick-center img {
+    z-index: 1000;
+}
+
+.main_slider p {
+    color: #ABDC2F;
+    font-size: 100px;
+    line-height: 125px;
+    margin-top: 104px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.slide {
+    transform: scale(0.8);
+    transition: transform 300ms;
+    /* opacity: 0.5; */
+}
+  
+.slideWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider_count{
+    font-family: Besley;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFE500;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.left_arrow{
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    width:80px;
+}
+.right_arrow{
+    position: absolute;
+    top: 50%;
+    right: -45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    width: 80px;
+}
+
+.left_arrow:hover, .right_arrow:hover{
+    transition: 0.5s;
+    transform:  translateY(-50%) scale(1.1);
+}
+
+.all_cards{
+    background: url('../../img/play_now.png') no-repeat center;
+    background-size: contain;
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    /* text-shadow: 0px 0px 5px rgba(0, 136, 255, 0.74); */
+    text-shadow: 0px 4px 0px #4C1881;
+    -webkit-text-stroke: 5px #5F1BA4;
+    padding: 50px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.all_cards:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 767.98px) {
+    .left_arrow{
+        width: 30px;
+        left: -45px;
+    }
+
+    .right_arrow{
+        width: 30px;
+        right: -45px;
+    }
+    .main_slide img {
+        width: 350px;
+    }
+    .slider{
+        background-size: 120%;
+        background-position-y: 76%
+    }
+    .main_slider p {
+        font-size: 60px;
+        line-height: 65px;
+        text-align: center;
+    }
+    .main_slider .slick-slider{
+        margin-top: 50px;
+        height: 170px;
+        width: 300px;
+    }
+    .main_slider .slick-slider img {
+        max-height: 170px;
+    }
+    .all_cards{
+        font-size: 25px;
+        -webkit-text-stroke: 2px #5F1BA4;
+    }
+}
+
+@media (max-width: 499.98px) {
+    .main_slide img {
+        width: 250px;
+    }
+    .slider{
+        background-size: 170%;
+    }
+    .slider span {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 399.98px) {
+    .main_slide img {
+        width: 250px;
+    }
+    .slider_count{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    
+    .slider h2{
+        padding: 20px 0;
+    }
+
+    
+}
